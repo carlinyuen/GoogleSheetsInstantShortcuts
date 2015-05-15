@@ -1,0 +1,43 @@
+{
+	"name": "__MSG_EXTENSION_NAME__"
+	, "version": "1.0.0"
+	, "manifest_version": 2
+
+	, "description": "__MSG_EXTENSION_DESCRIPTION__"
+	, "icons": {
+		"16": "images/icon16.png"
+		, "48": "images/icon48.png"
+		, "128": "images/icon128.png"
+	}
+	, "default_locale": "en"
+
+	, "page_action": {
+		"default_icon": {
+			"19": "images/icon16.png"
+			, "38": "images/icon48.png"
+		}
+        , "default_title": "__MSG_PAGE_ACTION_TITLE__"
+	}
+
+	, "content_scripts": [{
+		"matches": [ 
+		    "*://*.google.com/*/spreadsheets/*"
+        ]
+		, "js": [
+			"js/jquery-2.1.0.min.js"
+			, "js/sheets-instant-shortcuts.js"
+		]
+        , "css": [
+			"css/sheets-instant-shortcuts.css"
+        ]
+		, "run_at": "document_start"
+	}]
+
+	, "web_accessible_resources": ["images/*"]
+
+	, "permissions": [
+		"*://*.google.com/*/spreadsheets/*"
+	]
+	, "optional_permissions": [
+	]
+}

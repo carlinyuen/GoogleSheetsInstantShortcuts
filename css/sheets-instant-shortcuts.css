@@ -1,0 +1,56 @@
+#sheets-instant-shortcuts-panel
+{
+    position: fixed;
+    bottom: 6px;
+    left: 6px;
+    z-index: 9999;
+
+    opacity: 1.0;
+    width: auto;
+    height: auto;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+#sheets-instant-shortcuts-panel.disabled {
+    opacity: 0.5;
+}
+
+#sheets-instant-shortcuts-panel div.bg
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+
+    background: #000;
+    opacity: 0.66;
+    border: 1px solid #222;
+    border-radius: 4px;
+}
+
+#sheets-instant-shortcuts-panel > table
+{
+    position: relative;
+    z-index: 9999;
+
+    height: auto;
+    width: auto;
+
+    list-style: none;
+    margin: 4px;
+    padding: 8px;
+    border: none;
+    background: transparent bottom left no-repeat;
+}
+
+#sheets-instant-shortcuts-panel > table td
+{
+    padding: 0 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 8pt;
+    font-family: Verdana, Arial, Sans-Serif;
+}

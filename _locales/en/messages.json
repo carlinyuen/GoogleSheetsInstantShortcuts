@@ -1,0 +1,17 @@
+{
+	"EXTENSION_NAME": {
+		"message": "Instant Shortcuts for Google Sheets™"
+		, "description": "Extension name."
+	}
+
+	, "EXTENSION_DESCRIPTION": {
+		"message": "Preview your shortcuts as you use them in Sheets!"
+		, "description": "Extension description."
+	}
+
+	, "PAGE_ACTION_TITLE": {
+		"message": "Instant shortcuts available! Enable in lower left corner."
+		, "description": "Description that shows up on page action hover"
+	}
+
+}
